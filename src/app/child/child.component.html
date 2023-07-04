@@ -1,5 +1,11 @@
 <div>
-  <h1>Child</h1>
-  <ng-template [ngTemplateOutlet]="templateRefChild"></ng-template>
-  <ng-template [ngTemplateOutlet]="templateRefChild"></ng-template>
+
+  <h1>
+    <ng-content select="[ng-content--title]"></ng-content>
+  </h1>
+
+  <p>
+    <ng-content select="[ng-content--text]"></ng-content>
+  </p>
+  
 </div>
