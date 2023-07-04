@@ -1,0 +1,17 @@
+<div>
+  <h1>Parent</h1>
+
+  <ng-template #templateRefParent>
+    <p>Ovo se ponavlja iz samog parenta</p>
+  </ng-template>
+
+  <ng-template [ngTemplateOutlet]="templateRefParent"></ng-template>
+  <ng-template [ngTemplateOutlet]="templateRefParent"></ng-template>
+  <ng-template [ngTemplateOutlet]="templateRefParent"></ng-template>
+
+  <app-child>
+    <ng-template>
+      <p>Ovo se ponavlja iz childa</p>
+    </ng-template>
+  </app-child>
+</div>
